@@ -38,10 +38,10 @@ public class MathLib
 	}
 	
 	/*
-	 * Description: This function will take in an radian value and
-	 * 		return the result as a degree
+	 * Description: This function will take in an degree value and
+	 * 		return the result as a rad
 	 */
-	public static double my_rad_2_deg()
+	public static double my_deg_2_rad()
 	{
 		return 1;
 	}
