@@ -14,7 +14,7 @@ public class MathLib
 	 */
 	public static double my_square(double number)
 	{
-		return 1;
+		return number * number;
 	}
 	
 	/*
@@ -24,7 +24,14 @@ public class MathLib
 	 */
 	public static double my_pow(double basis, int exp)
 	{
-		return 1;
+		if(exp == 0) 
+		{
+			return 1;
+		}
+		else
+		{
+			return(my_square(my_pow(basis, exp/2))*(exp%2==1?basis:1));
+		}
 	}
 	
 	/*
@@ -34,16 +41,22 @@ public class MathLib
 	 */
 	public static long my_factorial(int number)
 	{
-		return 1;
+		long result = 1;
+		while(number > 1)
+		{
+			result *= number;
+			--number;
+		}
+		return result;
 	}
 	
 	/*
-	 * Description: This function will take in an radian value and
-	 * 		return the result as a degree
+	 * Description: This function will take in an rads value and
+	 * 				return the result as a degree
 	 */
-	public static double my_rad_2_deg()
+	public static double my_deg_2_rad(double degree)
 	{
-		return 1;
+		return degree * PI / 180;
 	}
 	
 	
