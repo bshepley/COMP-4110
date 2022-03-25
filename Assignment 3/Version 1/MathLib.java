@@ -51,41 +51,60 @@ public class MathLib
 	
 //-------------------- Start of Assignment Functions --------------------//
 
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made sin function
+	 */
 	public static double my_sin_rad()
 	{
 		return 1;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made sin function
+	 */
 	public static double my_sin_deg()
 	{
 		return 1;
 	}
 	
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made cos function
+	 */
 	public static double my_cos_rad()
 	{
 		return 1;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made cos function
+	 */
 	public static double my_cos_deg()
 	{
 		return 1;
 	}
 	
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made tan function
+	 */
 	public static double my_tan_rad()
 	{
 		return 1;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made tan function
+	 */
 	public static double my_tan_deg()
 	{
 		return 1;
 	}
 	
 //-------------------- End of Assignment Functions --------------------//
-
-	public static void main(String[] args)
-	{
-		System.out.println();
-	}
 }
 
