@@ -48,6 +48,16 @@ public class MathLib
 			result *= number;
 			--number;
 		}
+		
+		if(number < 0)
+		{
+			while(number < -1)
+			{
+				result *= number;
+				++number;
+			}
+			return -result;
+		}
 		return result;
 	}
 	
