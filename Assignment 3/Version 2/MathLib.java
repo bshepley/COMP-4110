@@ -78,7 +78,7 @@ public class MathLib
 	 * Description: This function will take in an radian value and
 	 * 		return the result using a self made sin function
 	 */
-	public static double my_sin_rad()
+	public static double my_sin_rad(double rads)
 	{
 		return 1;
 	}
@@ -87,7 +87,7 @@ public class MathLib
 	 * Description: This function will take in an degree value and
 	 * 		return the result using a self made sin function
 	 */
-	public static double my_sin_deg()
+	public static double my_sin_deg(double degree)
 	{
 		return 1;
 	}
@@ -96,7 +96,7 @@ public class MathLib
 	 * Description: This function will take in an radian value and
 	 * 		return the result using a self made cos function
 	 */
-	public static double my_cos_rad()
+	public static double my_cos_rad(double rads)
 	{
 		return 1;
 	}
@@ -105,7 +105,7 @@ public class MathLib
 	 * Description: This function will take in an degree value and
 	 * 		return the result using a self made cos function
 	 */
-	public static double my_cos_deg()
+	public static double my_cos_deg(double degree)
 	{
 		return 1;
 	}
@@ -114,7 +114,7 @@ public class MathLib
 	 * Description: This function will take in an radian value and
 	 * 		return the result using a self made tan function
 	 */
-	public static double my_tan_rad()
+	public static double my_tan_rad(double rads)
 	{
 		return 1;
 	}
@@ -123,7 +123,7 @@ public class MathLib
 	 * Description: This function will take in an radian value and
 	 * 		return the result using a self made tan function
 	 */
-	public static double my_tan_deg()
+	public static double my_tan_deg(double degree)
 	{
 		return 1;
 	}
