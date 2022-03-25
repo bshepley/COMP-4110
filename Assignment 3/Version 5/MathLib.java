@@ -1,4 +1,3 @@
-package a3SoftVer;
 
 public class MathLib 
 {
@@ -75,6 +74,10 @@ public class MathLib
 	
 //-------------------- Start of Assignment Functions --------------------//
 
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made sin function
+	 */
 	public static double my_sin_rad(double rads)
 	{	
 		int power = 1;
@@ -97,6 +100,10 @@ public class MathLib
 		return sinX;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made sin function
+	 */
 	public static double my_sin_deg(double degree)
 	{
 		double rads = MathLib.my_deg_2_rad(degree);
@@ -120,6 +127,11 @@ public class MathLib
 		}
 		return sinX;
 	}
+	
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made cos function
+	 */
 	public static double my_cos_rad(double radian)
 	{
 		int power = 0;
@@ -147,6 +159,10 @@ public class MathLib
 		return cosX;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made cos function
+	 */
 	public static double my_cos_deg(double degree)
 	{
 		double radian = MathLib.my_deg_2_rad(degree);
@@ -175,11 +191,19 @@ public class MathLib
 		return cosX;
 	}
 	
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made tan function
+	 */
 	public static double my_tan_rad(double rads)
 	{
 		return my_sin_rad(rads)/ my_cos_rad(rads);
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made tan function
+	 */
 	public static double my_tan_deg(double degree)
 	{
 		return my_sin_deg(degree)/ my_cos_deg(degree);
@@ -187,6 +211,4 @@ public class MathLib
 	}
 	
 //-------------------- End of Assignment Functions --------------------//
-
-
 }
