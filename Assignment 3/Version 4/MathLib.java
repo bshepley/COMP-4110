@@ -41,12 +41,21 @@ public class MathLib
 	 */
 	public static long my_factorial(int number)
 	{
-
 		long result = 1;
 		while(number > 1)
 		{
 			result *= number;
 			--number;
+		}
+		
+		if(number < 0)
+		{
+			while(number < -1)
+			{
+				result *= number;
+				++number;
+			}
+			return -result;
 		}
 		return result;
 	}
@@ -65,6 +74,10 @@ public class MathLib
 	
 //-------------------- Start of Assignment Functions --------------------//
 
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made sin function
+	 */
 	public static double my_sin_rad(double rads)
 	{	
 		int power = 1;
@@ -87,6 +100,10 @@ public class MathLib
 		return sinX;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made sin function
+	 */
 	public static double my_sin_deg(double degree)
 	{
 		double rads = MathLib.my_deg_2_rad(degree);
@@ -111,27 +128,87 @@ public class MathLib
 		return sinX;
 	}
 	
-	public static double my_cos_rad(double rads)
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made cos function
+	 */
+	public static double my_cos_rad(double radian)
 	{
-		return 1;
+		int power = 0;
+		double cosX = 0.0;
+
+		
+		for(int i = 1; i<= 11; i++) {
+			
+			double currentTerm = 0.0;
+			
+			if(i % 2 == 0) {
+				currentTerm = -MathLib.my_pow(radian, power) / MathLib.my_factorial(power);
+	
+			} else if(i % 2 != 0){
+				currentTerm = MathLib.my_pow(radian, power) / MathLib.my_factorial(power);
+
+			}
+
+			cosX = cosX + currentTerm;
+
+			power = power + 2;
+		
+		}
+		
+		return cosX;
 	}
 	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made cos function
+	 */
 	public static double my_cos_deg(double degree)
 	{
+		double radian = MathLib.my_deg_2_rad(degree);
+		int power = 0;
+		double cosX = 0.0;
+
+		
+		for(int i = 1; i<= 11; i++) {
+			
+			double currentTerm = 0.0;
+			
+			if(i % 2 == 0) {
+				currentTerm = -MathLib.my_pow(radian, power) / MathLib.my_factorial(power);
+	
+			} else if(i % 2 != 0){
+				currentTerm = MathLib.my_pow(radian, power) / MathLib.my_factorial(power);
+
+			}
+
+			cosX = cosX + currentTerm;
+
+			power = power + 2;
+		
+		}
+		
+		return cosX;
+	}
+	
+	/*
+	 * Description: This function will take in an radian value and
+	 * 		return the result using a self made tan function
+	 */
+	public static double my_tan_rad(double rads)
+	{
 		return 1;
 	}
 	
-	public static double my_tan_rad(double rads)
-	{
-		return my_sin_rad(rads)/ my_cos_rad(rads);
-	}
-	
+	/*
+	 * Description: This function will take in an degree value and
+	 * 		return the result using a self made tan function
+	 */
 	public static double my_tan_deg(double degree)
 	{
-		return my_sin_deg(degree)/ my_cos_deg(degree);
+		return 1;
 
 	}
 	
 //-------------------- End of Assignment Functions --------------------//
 }
-
