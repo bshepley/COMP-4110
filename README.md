@@ -31,7 +31,11 @@ Group 2
   - test_tan_deg
   - test_tan_rad
 
-
+**2. MathLib**
+- _Software:_ Java
+- _Functionality:_ 
+  - The custom math functions
+- _Notes:_
 ---
 # Versions
 **Version 1**
