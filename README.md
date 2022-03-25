@@ -72,7 +72,7 @@ There are 5 test cases to represent each of the important stages
 -Corresponding test cases and previously passing test cases pass, all others remain failing
  - my_cos_deg   
  - my_cos_rad
- - 
+
 **Version 5**
 -Implements **tan** functions - dependant on sin and cos functions
 -All test cases pass
